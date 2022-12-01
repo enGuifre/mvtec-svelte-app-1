@@ -1,235 +1,82 @@
 <script>
-	//Some components
-	import Line from './components/charts/Line.svelte'
-	import Area from './components/charts/Area.svelte'
-	import Bars from './components/charts/Bars.svelte'
-	import Multiline from './components/charts/Multiline.svelte'
-	import Scatter from './components/charts/Scatter.svelte'
-	import ScatterCanvas from './components/charts/ScatterCanvas.svelte'
-	import Mapbox from './components/maps/Mapbox.svelte'
-	import Map from './components/maps/Map.svelte'
-	import Scroller from '@sveltejs/svelte-scroller'
-  	import Sankey from './components/charts/Sankey.svelte'
 
-	//Test data
-	import world from './data/world.json';
-	import cases from './data/covid-cases.json';
-	import weather from './data/weather.json';
-	import weather2 from './data/weather2.json';
-	import weather3 from './data/weather3.json';
-	import sankeydata from './data/sankey-data.js';
+	import { scaleLinear } from 'd3-scale';
 
-	import locale from '@reuters-graphics/d3-locale';
-	import { geoWinkel3 } from 'd3-geo-projection';
-	import { scaleQuantize } from 'd3-scale';
-	import {extent} from 'd3-array';
-	
-	let color = '#5cc6b2';
+	//let color = '#5cc6b2';
+	let alphabet = [
+		{"letter":"A","frequency":0.08167}, {"letter":"B","frequency":0.01492}, {"letter":"C","frequency":0.02782},
+		{"letter":"D","frequency":0.04253}, {"letter":"E","frequency":0.12702}, {"letter":"F","frequency":0.02288},
+		{"letter":"G","frequency":0.02015}, {"letter":"H","frequency":0.06094}, {"letter":"I","frequency":0.06966},
+		{"letter":"J","frequency":0.00153}, {"letter":"K","frequency":0.00772}, {"letter":"L","frequency":0.04025},
+		{"letter":"M","frequency":0.02406}, {"letter":"N","frequency":0.06749}, {"letter":"O","frequency":0.07507},
+		{"letter":"P","frequency":0.01929}, {"letter":"Q","frequency":0.00095}, {"letter":"R","frequency":0.05987},
+		{"letter":"S","frequency":0.06327}, {"letter":"T","frequency":0.09056}, {"letter":"U","frequency":0.02758},
+		{"letter":"V","frequency":0.00978}, {"letter":"W","frequency":0.0236}, {"letter":"X","frequency":0.0015},
+		{"letter":"Y","frequency":0.01974}, {"letter":"Z","frequency":0.00074}
+	];
 
-	let index = 0, offset, progress;
+	let height = 250;
+	let width = 600;
+	//let margin = ({top: 20, right: 30, bottom: 40, left: 50});
 
-	let scatterStep, otherStep;
+	console.log(alphabet)
 
-	const loc = new locale('es');
-	const format = {
-		x: loc.formatTime('%b %e'),
-        y: loc.format(',.1d'),
-    }
-
-	weather.forEach(d => d.time = new Date(d.time));
-	weather2.forEach(d => d.time = new Date(d.time));
-
-	const projection = geoWinkel3()
-				.rotate([-11, 0])
-				.precision(1);
-
-	console.log(cases)
-
-	const palette = () => {
-		const _extent = extent(cases.data, d => d.latest.cases)
-		const max = _extent[0] > _extent[1] ? _extent[0] : _extent[1];
-		const min = _extent[0] < _extent[1] ? _extent[0] : _extent[1];
-		const d = (max-min)/9;
-
-		return scaleQuantize()
-				.range(['#ffe461', '#ffc755', '#fea94d', '#f68c4a', '#ea704a', '#da554e', '#c73a55', '#ae1f5f', '#90006c'])
-				.domain([... Array(9)].map((_d, i) => min + d * i))
-				.nice();
-	}
-
-	const steps = [
-		{center: [-7.889722,42.782222], zoom:7.5},
-		{center: [0,42.782222], zoom:7},
-		{center: [-7.889722,41.782222], zoom:6.5}
-	]
-
-	const points = [...new Array(2500)]
-        .map(d => (
-            {
-				coords: [
-					{ x: Math.random() * 400,
-					y: Math.random() * 400,
-					width: Math.random() * 16,
-					height: Math.random() * 16 },
-					{ x: Math.random() * 400,
-					y: Math.random() * 400,
-					width: Math.random() * 16,
-					height: Math.random() * 16 }
-				]
-        }))
-
-	const otherPoints = [...new Array(800)]
-        .map(d => (
-            {
-				coords: [
-					{ x: Math.random() * 400,
-					y: Math.random() * 400,
-					r: Math.random() * 16 },
-					{ x: Math.random() * 400,
-					y: Math.random() * 400,
-					r: Math.random() * 16 }
-				]
-        }))
+	/*$: xScale = scaleLinear()
+		.domain(alphabet.map(d => d.letter))
+		.range([margin.left, width - margin.right])
 
 	
+	$: yScale = scaleLinear()
+		.domain([0,Math.max(alphabet.map(d=>d.frequency))])
+		.range([height - margin.bottom, margin.top]);
+	*/
+
+//viewBox="0 0 {width} {height}"
 </script>
 
 <main>
+	<div class="chart">
+		<h1>Frequencies</h1>
+		<svg height="{height}" width="{width}" style="background: lightblue">
+		<!--<svg class="graph" height="{height}" width="{width}" style="background: lightblue">
 
-	<Multiline 
-		data={weather2}
-		title='Title' desc='Description'
-		key={{x: 'time', y: ['ny1', 'sf1', 'au1']}}
-		{format}
-		color={['#fc0', '#036', '#f0c']}
-		layout='col'
-	/>
+			<g class="axis y-axis">
+				<g class="grid y-grid" transform="translate({margin.left},0)" fill="black"></g>
+				<line x2="100%"></line>
+			</g>
 
-	<Line 
-		data={weather}
-		title='Title' desc='Description'
-		key={{x: 'time', y: 'value'}}
-		{format}
-		{color}
-		layout='col'
-	/>
 
-	<Sankey
-		data={sankeydata}
-		colorNodes={d => '#00bbff'}
-		colorLinks={d => '#00bbff35'}
-		layout='col'
-	/>
-
-	<Area 
-		data={weather}
-		title='Title' desc='Description'
-		key={{x: 'time', y: 'value'}}
-		{format}
-		{color}
-		layout='col'
-	/>
-
-	<div class='col'>
-		<p>This is an example of how you can do smooth transitions. It uses canvas so you can do a few thousand elements. Instead of the buttons triggering which step is in view, you can use the scroll ...  </p>
-		<button on:click={() => scatterStep = 0}>Arrange like so</button>
-		<button on:click={() => scatterStep = 1}>Rearrange again</button>
+			<g class="axis x-axis">
+				{#each alphabet as item, i}
+				<g class=".tick:last-of-type text" transform="translate(0,{250 - margin.bottom})">
+					<text x="10" y="-10">{item.letter}</text>
+				</g>
+				{/each}
+			</g>-->
+			<!--<g class="bar">-->
+				{#each alphabet as item, i}
+					<rect
+						x={i*23}
+						y={height - item.frequency * 1500}
+						witdh=20
+						height={item.frequency*1000}
+						fill="black"
+						stroke="black"></rect>
+					<text 
+					x={i*23}
+					y={height - item.frequency*1500}>
+						{item.letter}
+					</text>
+					{/each}
+			<!--</g>-->
+		</svg>
+		
 	</div>
-	<ScatterCanvas
-		data={points}
-		layout='wide'
-		step={scatterStep}
-		mark='square'
-	/>
+	<!--<rect witdth="(item, i) => i * 25" height="item => height - item.frequency*1500"></rect>
+<rect witdth="20" height="item => height - item.frequency*1500" style="fill:purple"></rect>-->
 
-	<div class='col'>
-		<p>This is an example of how you can do smooth transitions. It uses canvas so you can do a few thousand elements. Instead of the buttons triggering which step is in view, you can use the scroll ...  </p>
-		<button on:click={() => otherStep = 0}>Arrange like so</button>
-		<button on:click={() => otherStep = 1}>Rearrange again</button>
-	</div>
-	<ScatterCanvas
-		data={otherPoints}
-		layout='wide'
-		step={otherStep}
-		mark='circle'
-	/>
-
-	<Bars 
-		data={weather}
-		title='Title' desc='Description'
-		key={{x: 'time', y: 'value'}}
-		{color}
-		layout='col'
-	/>
-
-	<Scatter 
-		data={weather3}
-		title='Title' desc='Description'
-		key={{x: 'pressure', y: 'temperatureHigh', size:'moonPhase'}}
-		{format}
-		{color}
-		layout='col'
-	/>
-	
-	<!-- <Scroller top={0} bottom={1} bind:index bind:offset bind:progress>
-	<div slot="background">
-		<Mapbox 
-			options={
-				{style:'mapbox://styles/fndvit/ckc1oqzq94nh91imn76jqxcha',
-				scrollZoom:false,
-				center: [-7.889722,42.782222],
-				zoom: 6.5}
-			}
-			steps={steps}
-			index={index}
-			accessToken='pk.eyJ1IjoiZm5kdml0IiwiYSI6ImNrYzBzYjhkMDBicG4yc2xrbnMzNXVoeDIifQ.mrdvw_7AIeOwa5IgHLaHJg'
-			layout='fs'
-		/>
-	</div>
-	<div slot="foreground">
-		<section><p class='col'>This is the first section.</p></section>
-		<section><p class='col'>This is the second section.</p></section>
-		<section><p class='col'>This is the third section.</p></section>
-	</div>
-	</Scroller> -->
-
-	<Map 
-		data={cases.data}
-		map={world}
-		geo='countries'
-		scale={palette()}
-		projection={projection}
-    	join={{data:'geoid', map:'alpha3'}}
-    	value='latest.cases'
-    	legend={{title: '', format: ''}}
-		layout='wide'
-	/>
-	
 </main>
 
 <style>
-	main {
-		padding: 1em;
-		margin: 0 auto;
-	}
-
-	:global(.graphic) {
-		height:50vh;
-		margin-bottom:3rem;
-	}
-	
-	[slot="foreground"] {
-		pointer-events: none;
-	}
-	
-	[slot="foreground"] section {
-		pointer-events: all;
-	}
-	
-	section {
-		height: 80vh;
-		padding: 1em;
-		margin: 0 0 2em 0;
-	}
 
 </style>
