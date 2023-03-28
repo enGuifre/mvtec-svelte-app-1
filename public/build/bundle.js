@@ -55,6 +55,9 @@ var app = (function () {
     function children(element) {
         return Array.from(element.childNodes);
     }
+    function set_style(node, key, value, important) {
+        node.style.setProperty(key, value, important ? 'important' : '');
+    }
     function custom_event(type, detail) {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, false, false, detail);
@@ -312,40 +315,90 @@ var app = (function () {
     const file = "src\\App.svelte";
 
     function create_fragment(ctx) {
-    	let div;
+    	let div1;
     	let h1;
+    	let b;
     	let t1;
+    	let br;
+    	let t2;
+    	let p;
+    	let t4;
+    	let iframe;
+    	let iframe_src_value;
+    	let div0;
+    	let a;
+    	let t5;
     	let img;
     	let img_src_value;
 
     	const block = {
     		c: function create() {
-    			div = element("div");
+    			div1 = element("div");
     			h1 = element("h1");
-    			h1.textContent = `${/*header*/ ctx[0]}`;
+    			b = element("b");
+    			b.textContent = `${/*header*/ ctx[0]}`;
     			t1 = space();
+    			br = element("br");
+    			t2 = space();
+    			p = element("p");
+    			p.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \r\n\tSed eget sapien vel purus molestie auctor eu sit amet risus. \r\n\tEtiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, \r\n\teu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. \r\n\tNam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. \r\n\tNullam non diam id justo semper consectetur a non felis. \r\n\tPhasellus ac quam eu velit aliquam consequat nec vel orci.";
+    			t4 = space();
+    			iframe = element("iframe");
+    			div0 = element("div");
+    			a = element("a");
+    			t5 = space();
     			img = element("img");
+    			add_location(b, file, 15, 4, 196);
     			add_location(h1, file, 15, 0, 192);
+    			add_location(br, file, 16, 0, 218);
+    			add_location(p, file, 18, 0, 226);
+    			if (iframe.src !== (iframe_src_value = "https://flo.uri.sh/visualisation/13188024/embed")) attr_dev(iframe, "src", iframe_src_value);
+    			attr_dev(iframe, "title", "Interactive or visual content");
+    			attr_dev(iframe, "class", "flourish-embed-iframe");
+    			attr_dev(iframe, "frameborder", "0");
+    			attr_dev(iframe, "scrolling", "no");
+    			set_style(iframe, "width", "100%");
+    			set_style(iframe, "height", "600px");
+    			attr_dev(iframe, "sandbox", "allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation");
+    			add_location(iframe, file, 25, 1, 729);
+    			attr_dev(a, "class", "flourish-credit");
+    			attr_dev(a, "href", "https://public.flourish.studio/visualisation/13188024/?utm_source=embed&utm_campaign=visualisation/13188024");
+    			attr_dev(a, "target", "_top");
+    			set_style(a, "text-decoration", "none", 1);
+    			add_location(a, file, 25, 436, 1164);
+    			set_style(div0, "width", "100%!");
+    			set_style(div0, "margin-top", "4px", 1);
+    			set_style(div0, "text-align", "right", 1);
+    			add_location(div0, file, 25, 358, 1086);
     			if (img.src !== (img_src_value = "postits_4.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Image");
     			attr_dev(img, "class", "svelte-1i3okzi");
-    			add_location(img, file, 16, 0, 211);
-    			add_location(div, file, 14, 0, 185);
+    			add_location(img, file, 26, 0, 1371);
+    			add_location(div1, file, 14, 0, 185);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, h1);
-    			append_dev(div, t1);
-    			append_dev(div, img);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, h1);
+    			append_dev(h1, b);
+    			append_dev(div1, t1);
+    			append_dev(div1, br);
+    			append_dev(div1, t2);
+    			append_dev(div1, p);
+    			append_dev(div1, t4);
+    			append_dev(div1, iframe);
+    			append_dev(div1, div0);
+    			append_dev(div0, a);
+    			append_dev(div1, t5);
+    			append_dev(div1, img);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(div1);
     		}
     	};
 
