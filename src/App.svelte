@@ -1,5 +1,5 @@
 <script>
-  let message = "Hello, world!!!!!!!!";
+  let message = "Hello, world!";
   let selectedFile = null;
 
   function handleClick() {
@@ -14,5 +14,5 @@
 
 <div>
   <p>{message}</p>
-<img src="postits_4.png" alt="Example image" width="150"/>
+<img src="postits_4.png" alt="Example image" width="1250"/>
 </div>
