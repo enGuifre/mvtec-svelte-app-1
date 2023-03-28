@@ -333,12 +333,12 @@ var app = (function () {
     			t0 = text(/*message*/ ctx[0]);
     			t1 = space();
     			img = element("img");
-    			add_location(p, file, 15, 2, 253);
+    			add_location(p, file, 15, 2, 260);
     			if (img.src !== (img_src_value = "postits_4.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Example image");
     			attr_dev(img, "width", "150");
-    			add_location(img, file, 16, 0, 271);
-    			add_location(div, file, 14, 0, 244);
+    			add_location(img, file, 16, 0, 278);
+    			add_location(div, file, 14, 0, 251);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -374,7 +374,7 @@ var app = (function () {
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
-    	let message = "Hello, world!";
+    	let message = "Hello, world!!!!!!!!";
     	let selectedFile = null;
 
     	function handleClick() {
