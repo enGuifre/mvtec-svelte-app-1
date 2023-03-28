@@ -280,13 +280,6 @@ var app = (function () {
         else
             dispatch_dev('SvelteDOMSetAttribute', { node, attribute, value });
     }
-    function set_data_dev(text, data) {
-        data = '' + data;
-        if (text.wholeText === data)
-            return;
-        dispatch_dev('SvelteDOMSetData', { node: text, data });
-        text.data = data;
-    }
     function validate_slots(name, slot, keys) {
         for (const slot_key of Object.keys(slot)) {
             if (!~keys.indexOf(slot_key)) {
@@ -320,8 +313,7 @@ var app = (function () {
 
     function create_fragment(ctx) {
     	let div;
-    	let p;
-    	let t0;
+    	let h1;
     	let t1;
     	let img;
     	let img_src_value;
@@ -329,30 +321,27 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			p = element("p");
-    			t0 = text(/*message*/ ctx[0]);
+    			h1 = element("h1");
+    			h1.textContent = `${/*header*/ ctx[0]}`;
     			t1 = space();
     			img = element("img");
-    			add_location(p, file, 15, 2, 253);
+    			add_location(h1, file, 15, 0, 191);
     			if (img.src !== (img_src_value = "postits_4.png")) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "Example image");
-    			attr_dev(img, "width", "1250");
-    			add_location(img, file, 16, 0, 271);
-    			add_location(div, file, 14, 0, 244);
+    			attr_dev(img, "alt", "Image");
+    			attr_dev(img, "class", "svelte-17h2kiy");
+    			add_location(img, file, 16, 0, 210);
+    			add_location(div, file, 14, 0, 184);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
-    			append_dev(div, p);
-    			append_dev(p, t0);
+    			append_dev(div, h1);
     			append_dev(div, t1);
     			append_dev(div, img);
     		},
-    		p: function update(ctx, [dirty]) {
-    			if (dirty & /*message*/ 1) set_data_dev(t0, /*message*/ ctx[0]);
-    		},
+    		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
@@ -374,40 +363,24 @@ var app = (function () {
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
-    	let message = "Hello, world!";
-    	let selectedFile = null;
-
-    	function handleClick() {
-    		$$invalidate(0, message = "Button clicked!");
-    	}
-
-    	function handleFileSelect(event) {
-    		selectedFile = event.target.files[0];
-    	}
-
+    	let header = "Enough phone for today!";
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({
-    		message,
-    		selectedFile,
-    		handleClick,
-    		handleFileSelect
-    	});
+    	$$self.$capture_state = () => ({ header });
 
     	$$self.$inject_state = $$props => {
-    		if ("message" in $$props) $$invalidate(0, message = $$props.message);
-    		if ("selectedFile" in $$props) selectedFile = $$props.selectedFile;
+    		if ("header" in $$props) $$invalidate(0, header = $$props.header);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [message];
+    	return [header];
     }
 
     class App extends SvelteComponentDev {

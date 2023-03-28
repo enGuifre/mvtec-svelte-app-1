@@ -1,18 +1,19 @@
 <script>
-  let message = "Hello, world!";
-  let selectedFile = null;
-
-  function handleClick() {
-    message = "Button clicked!";
-  }
-
-  function handleFileSelect(event) {
-    selectedFile = event.target.files[0];
-  }
+  let header = "Enough phone for today!";
 </script>
 
 
+<style>
+	 img {
+    display: block;
+    margin: auto;
+    width: 10%;
+    max-width: 1250px;
+  }
+</style>
+
 <div>
-  <p>{message}</p>
-<img src="postits_4.png" alt="Example image" width="1250"/>
+<h1>{header}</h1>
+<img src="postits_4.png" alt="Image"/>
 </div>
+
