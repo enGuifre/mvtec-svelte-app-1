@@ -7,7 +7,7 @@
 	 img {
     display: block;
     margin: auto;
-    width: 10%;
+    width: 100%;
     max-width: 1250px;
   }
 </style>

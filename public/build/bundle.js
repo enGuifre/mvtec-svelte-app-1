@@ -325,12 +325,12 @@ var app = (function () {
     			h1.textContent = `${/*header*/ ctx[0]}`;
     			t1 = space();
     			img = element("img");
-    			add_location(h1, file, 15, 0, 191);
+    			add_location(h1, file, 15, 0, 192);
     			if (img.src !== (img_src_value = "postits_4.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Image");
-    			attr_dev(img, "class", "svelte-17h2kiy");
-    			add_location(img, file, 16, 0, 210);
-    			add_location(div, file, 14, 0, 184);
+    			attr_dev(img, "class", "svelte-1i3okzi");
+    			add_location(img, file, 16, 0, 211);
+    			add_location(div, file, 14, 0, 185);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
