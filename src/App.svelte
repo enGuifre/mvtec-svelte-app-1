@@ -15,7 +15,8 @@
 		margin: auto;
 		max-width: 500px;
 		top: 5%;
-		left: 35%;
+		left: -28%;
+		position: relative;
 	  }
 	  h2 {
 		text-shadow: 10px 10px 10px #000;
