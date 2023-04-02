@@ -19,7 +19,7 @@
 		position: relative;
 	  }
 	  h2 {
-		text-shadow: 10px 10px 10px #000;
+		text-shadow: 0.5px 0.5px 0.5px #000;
 		position: absolute;
 		top: 2%;
 		left: 3%;
@@ -34,7 +34,9 @@
 	</style>
 	
 	<div style="position:relative;">
+		
 	  <img src="photo 1.jpg" alt="Image"/>
+	 
 	  <br>
 	  <h2><b>{header}</b></h2>
 	</div>
@@ -47,8 +49,26 @@
 	Nullam non diam id justo semper consectetur a non felis. 
 	Phasellus ac quam eu velit aliquam consequat nec vel orci. </p>
 
-	<img src="photo 2.jpg" alt="Image" class="smaller"/>
+	<div style="position:relative;">
+		<img src="photo 2.jpg" alt="Image" class="smaller"/>
+		<div style="position:absolute; top: -5%; left: 45%; width: 50%;">
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante mauris. 
+			Integer vestibulum nibh magna, ut scelerisque libero rutrum et. Vivamus eget risus nulla. 
+			Etiam nec elit nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
+			posuere cubilia curae; Fusce scelerisque, risus eu porta eleifend, tellus lorem tempor elit, 
+			sed sodales nulla ante at mauris. Morbi dictum facilisis nisl, nec sagittis velit mattis a.
 
+			Etiam congue et risus ac consectetur. Cras erat mauris, ultrices et pellentesque vitae, 
+			maximus id sem. Etiam posuere maximus neque, at auctor dolor bibendum et. 
+			Curabitur metus magna, porttitor eu cursus in, dapibus eget turpis. 
+			Aliquam vitae diam a metus semper euismod. Class aptent taciti sociosqu ad litora torquent
+			 per conubia nostra, per inceptos himenaeos. Morbi commodo, metus sed consectetur laoreet, 
+			 dolor urna viverra velit, nec porttitor turpis risus eu arcu. Morbi non cursus tellus, 
+			 vitae tristique mauris. Suspendisse venenatis velit risus, accumsan pellentesque diam volutpat sed. 
+			 Maecenas eleifend cursus convallis. Vivamus tincidunt ex non imperdiet varius. 
+			 Integer bibendum eu velit nec porta.</p>
+		</div>
+	  </div>
 	<br>
 	
 <img src="postits_4.png" alt="Image"/>
