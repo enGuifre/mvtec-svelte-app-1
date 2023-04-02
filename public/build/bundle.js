@@ -1,5 +1,5 @@
 
-(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35731/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
 var app = (function () {
     'use strict';
 
@@ -335,8 +335,11 @@ var app = (function () {
     	let img2;
     	let img2_src_value;
     	let t9;
-    	let iframe;
-    	let iframe_src_value;
+    	let iframe0;
+    	let iframe0_src_value;
+    	let t10;
+    	let iframe1;
+    	let iframe1_src_value;
 
     	const block = {
     		c: function create() {
@@ -356,44 +359,55 @@ var app = (function () {
     			img1 = element("img");
     			t6 = space();
     			p1 = element("p");
-    			p1.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. \r\nEtiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. \r\nNam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. \r\nPhasellus ac quam eu velit aliquam consequat nec vel orci.";
+    			p1.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. \r\nEtiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. \r\nNam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. \r\nPhasellus ac quam eu velit aliquam consequat nec vel orci. \r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. \r\nEtiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. \r\nNam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. \r\nPhasellus ac quam eu velit aliquam consequat nec vel orci.\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. \r\nEtiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. \r\nNam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. \r\nPhasellus ac quam eu velit aliquam consequat nec vel orci.\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. \r\nEtiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. \r\nNam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in.";
     			t8 = space();
     			img2 = element("img");
     			t9 = space();
-    			iframe = element("iframe");
+    			iframe0 = element("iframe");
+    			t10 = space();
+    			iframe1 = element("iframe");
     			if (img0.src !== (img0_src_value = "photo 1.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Image");
-    			attr_dev(img0, "class", "svelte-14mkywa");
-    			add_location(img0, file, 53, 1, 885);
-    			add_location(br, file, 54, 1, 925);
-    			add_location(b, file, 55, 5, 936);
-    			attr_dev(h2, "class", "svelte-14mkywa");
-    			add_location(h2, file, 55, 1, 932);
+    			attr_dev(img0, "class", "svelte-seynqr");
+    			add_location(img0, file, 53, 1, 888);
+    			add_location(br, file, 54, 1, 928);
+    			add_location(b, file, 55, 5, 939);
+    			attr_dev(h2, "class", "svelte-seynqr");
+    			add_location(h2, file, 55, 1, 935);
     			set_style(div0, "position", "relative");
-    			add_location(div0, file, 52, 0, 850);
-    			attr_dev(p0, "class", "svelte-14mkywa");
-    			add_location(p0, file, 58, 0, 968);
+    			add_location(div0, file, 52, 0, 853);
+    			attr_dev(p0, "class", "svelte-seynqr");
+    			add_location(p0, file, 58, 0, 971);
     			if (img1.src !== (img1_src_value = "photo 2.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Image");
-    			attr_dev(img1, "class", "smaller svelte-14mkywa");
-    			add_location(img1, file, 64, 1, 1492);
-    			attr_dev(p1, "class", "svelte-14mkywa");
-    			add_location(p1, file, 65, 1, 1548);
-    			attr_dev(div1, "class", "image-container svelte-14mkywa");
-    			add_location(div1, file, 63, 0, 1460);
+    			attr_dev(img1, "class", "smaller svelte-seynqr");
+    			add_location(img1, file, 64, 1, 1495);
+    			attr_dev(p1, "class", "svelte-seynqr");
+    			add_location(p1, file, 65, 1, 1551);
+    			attr_dev(div1, "class", "image-container svelte-seynqr");
+    			add_location(div1, file, 63, 0, 1463);
     			if (img2.src !== (img2_src_value = "postits_4.png")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Image");
-    			attr_dev(img2, "class", "svelte-14mkywa");
-    			add_location(img2, file, 71, 0, 2047);
-    			if (iframe.src !== (iframe_src_value = "https://flo.uri.sh/visualisation/13237030/embed")) attr_dev(iframe, "src", iframe_src_value);
-    			attr_dev(iframe, "title", "Interactive or visual content");
-    			attr_dev(iframe, "class", "flourish-embed-iframe");
-    			attr_dev(iframe, "frameborder", "0");
-    			attr_dev(iframe, "scrolling", "no");
-    			set_style(iframe, "width", "100%");
-    			set_style(iframe, "height", "600px");
-    			attr_dev(iframe, "sandbox", "allow-same-origin allow-forms allow-scripts allow-downloads \r\nallow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation");
-    			add_location(iframe, file, 72, 0, 2088);
+    			attr_dev(img2, "class", "svelte-seynqr");
+    			add_location(img2, file, 82, 0, 3375);
+    			if (iframe0.src !== (iframe0_src_value = "https://flo.uri.sh/visualisation/13237030/embed")) attr_dev(iframe0, "src", iframe0_src_value);
+    			attr_dev(iframe0, "title", "Interactive or visual content");
+    			attr_dev(iframe0, "class", "flourish-embed-iframe");
+    			attr_dev(iframe0, "frameborder", "0");
+    			attr_dev(iframe0, "scrolling", "no");
+    			set_style(iframe0, "width", "100%");
+    			set_style(iframe0, "height", "600px");
+    			attr_dev(iframe0, "sandbox", "allow-same-origin allow-forms allow-scripts allow-downloads \r\nallow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation");
+    			add_location(iframe0, file, 83, 0, 3416);
+    			if (iframe1.src !== (iframe1_src_value = "https://flo.uri.sh/visualisation/13188024/embed")) attr_dev(iframe1, "src", iframe1_src_value);
+    			attr_dev(iframe1, "title", "Interactive or visual content");
+    			attr_dev(iframe1, "class", "flourish-embed-iframe");
+    			attr_dev(iframe1, "frameborder", "0");
+    			attr_dev(iframe1, "scrolling", "no");
+    			set_style(iframe1, "width", "100%");
+    			set_style(iframe1, "height", "600px");
+    			attr_dev(iframe1, "sandbox", "allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox \r\nallow-top-navigation-by-user-activation");
+    			add_location(iframe1, file, 88, 0, 3783);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -416,7 +430,9 @@ var app = (function () {
     			insert_dev(target, t8, anchor);
     			insert_dev(target, img2, anchor);
     			insert_dev(target, t9, anchor);
-    			insert_dev(target, iframe, anchor);
+    			insert_dev(target, iframe0, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, iframe1, anchor);
     		},
     		p: noop,
     		i: noop,
@@ -430,7 +446,9 @@ var app = (function () {
     			if (detaching) detach_dev(t8);
     			if (detaching) detach_dev(img2);
     			if (detaching) detach_dev(t9);
-    			if (detaching) detach_dev(iframe);
+    			if (detaching) detach_dev(iframe0);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(iframe1);
     		}
     	};
 

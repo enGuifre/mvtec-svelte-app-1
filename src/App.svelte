@@ -10,10 +10,10 @@
 		height: auto;
 	}
 	.smaller {
+		max-width: 500px;
 		top: 5%;
 		left: 2%;
 		position: relative;
-		max-width: 40%
 	}
 	h2 {
 		text-shadow: 0.5px 0.5px 0.5px #000;
@@ -66,7 +66,18 @@ Phasellus ac quam eu velit aliquam consequat nec vel orci. </p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. 
 Etiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. 
 Nam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. 
-Phasellus ac quam eu velit aliquam consequat nec vel orci. </p>
+Phasellus ac quam eu velit aliquam consequat nec vel orci. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. 
+Etiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. 
+Nam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. 
+Phasellus ac quam eu velit aliquam consequat nec vel orci.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. 
+Etiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. 
+Nam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. 
+Phasellus ac quam eu velit aliquam consequat nec vel orci.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. 
+Etiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. 
+Nam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in.</p>
 </div>
 
 <img src="postits_4.png" alt="Image" />
@@ -74,3 +85,8 @@ Phasellus ac quam eu velit aliquam consequat nec vel orci. </p>
 class='flourish-embed-iframe' frameborder='0' scrolling='no' 
 style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads 
 allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+
+<iframe src='https://flo.uri.sh/visualisation/13188024/embed' title='Interactive or visual content' 
+class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' 
+sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox 
+allow-top-navigation-by-user-activation'></iframe>
