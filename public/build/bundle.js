@@ -1,5 +1,5 @@
 
-(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35732/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
 var app = (function () {
     'use strict';
 
@@ -338,15 +338,11 @@ var app = (function () {
     	let img2;
     	let img2_src_value;
     	let t10;
-    	let iframe0;
-    	let iframe0_src_value;
-    	let div3;
-    	let a0;
+    	let iframe;
+    	let iframe_src_value;
     	let t11;
-    	let iframe1;
-    	let iframe1_src_value;
-    	let div4;
-    	let a1;
+    	let div3;
+    	let a;
 
     	const block = {
     		c: function create() {
@@ -367,85 +363,60 @@ var app = (function () {
     			t6 = space();
     			div1 = element("div");
     			p1 = element("p");
-    			p1.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac ante mauris. \r\n\t\t\tInteger vestibulum nibh magna, ut scelerisque libero rutrum et. Vivamus eget risus nulla. \r\n\t\t\tEtiam nec elit nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices \r\n\t\t\tposuere cubilia curae; Fusce scelerisque, risus eu porta eleifend, tellus lorem tempor elit, \r\n\t\t\tsed sodales nulla ante at mauris. Morbi dictum facilisis nisl, nec sagittis velit mattis a.\r\n\r\n\t\t\tEtiam congue et risus ac consectetur. Cras erat mauris, ultrices et pellentesque vitae, \r\n\t\t\tmaximus id sem. Etiam posuere maximus neque, at auctor dolor bibendum et. \r\n\t\t\tCurabitur metus magna, porttitor eu cursus in, dapibus eget turpis. \r\n\t\t\tAliquam vitae diam a metus semper euismod. Class aptent taciti sociosqu ad litora torquent\r\n\t\t\t per conubia nostra, per inceptos himenaeos. Morbi commodo, metus sed consectetur laoreet, \r\n\t\t\t dolor urna viverra velit, nec porttitor turpis risus eu arcu. Morbi non cursus tellus, \r\n\t\t\t vitae tristique mauris. Suspendisse venenatis velit risus, accumsan pellentesque diam volutpat sed. \r\n\t\t\t Maecenas eleifend cursus convallis. Vivamus tincidunt ex non imperdiet varius. \r\n\t\t\t Integer bibendum eu velit nec porta.";
+    			p1.textContent = "Here's some extra text next to photo 2. It won't overlap with the postits image because of the CSS we added.";
     			t8 = space();
     			br1 = element("br");
     			t9 = space();
     			img2 = element("img");
     			t10 = space();
-    			iframe0 = element("iframe");
-    			div3 = element("div");
-    			a0 = element("a");
+    			iframe = element("iframe");
     			t11 = space();
-    			iframe1 = element("iframe");
-    			div4 = element("div");
-    			a1 = element("a");
+    			div3 = element("div");
+    			a = element("a");
     			if (img0.src !== (img0_src_value = "photo 1.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Image");
-    			attr_dev(img0, "class", "svelte-19c3dgi");
-    			add_location(img0, file, 37, 3, 568);
-    			add_location(br0, file, 39, 3, 613);
-    			add_location(b, file, 40, 7, 626);
-    			attr_dev(h2, "class", "svelte-19c3dgi");
-    			add_location(h2, file, 40, 3, 622);
+    			attr_dev(img0, "class", "svelte-ejfkst");
+    			add_location(img0, file, 57, 1, 857);
+    			add_location(br0, file, 58, 1, 896);
+    			add_location(b, file, 59, 5, 907);
+    			attr_dev(h2, "class", "svelte-ejfkst");
+    			add_location(h2, file, 59, 1, 903);
     			set_style(div0, "position", "relative");
-    			add_location(div0, file, 35, 1, 527);
-    			attr_dev(p0, "class", "svelte-19c3dgi");
-    			add_location(p0, file, 43, 0, 659);
+    			add_location(div0, file, 56, 0, 822);
+    			attr_dev(p0, "class", "svelte-ejfkst");
+    			add_location(p0, file, 62, 0, 939);
     			if (img1.src !== (img1_src_value = "photo 2.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Image");
-    			attr_dev(img1, "class", "smaller svelte-19c3dgi");
-    			add_location(img1, file, 52, 2, 1200);
-    			attr_dev(p1, "class", "svelte-19c3dgi");
-    			add_location(p1, file, 54, 4, 1327);
-    			set_style(div1, "position", "absolute");
-    			set_style(div1, "top", "-5%");
-    			set_style(div1, "left", "45%");
-    			set_style(div1, "width", "50%");
-    			add_location(div1, file, 53, 2, 1256);
-    			set_style(div2, "position", "relative");
-    			add_location(div2, file, 51, 1, 1164);
-    			add_location(br1, file, 71, 1, 2587);
+    			attr_dev(img1, "class", "smaller svelte-ejfkst");
+    			add_location(img1, file, 71, 1, 1451);
+    			attr_dev(p1, "class", "svelte-ejfkst");
+    			add_location(p1, file, 73, 2, 1541);
+    			attr_dev(div1, "class", "text-beside-image svelte-ejfkst");
+    			add_location(div1, file, 72, 1, 1506);
+    			add_location(div2, file, 70, 0, 1443);
+    			add_location(br1, file, 77, 0, 1677);
     			if (img2.src !== (img2_src_value = "postits_4.png")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Image");
-    			attr_dev(img2, "class", "svelte-19c3dgi");
-    			add_location(img2, file, 73, 0, 2596);
-    			if (iframe0.src !== (iframe0_src_value = "https://flo.uri.sh/visualisation/13237030/embed")) attr_dev(iframe0, "src", iframe0_src_value);
-    			attr_dev(iframe0, "title", "Interactive or visual content");
-    			attr_dev(iframe0, "class", "flourish-embed-iframe");
-    			attr_dev(iframe0, "frameborder", "0");
-    			attr_dev(iframe0, "scrolling", "no");
-    			set_style(iframe0, "width", "100%");
-    			set_style(iframe0, "height", "600px");
-    			attr_dev(iframe0, "sandbox", "allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation");
-    			add_location(iframe0, file, 74, 0, 2636);
-    			attr_dev(a0, "class", "flourish-credit");
-    			attr_dev(a0, "href", "https://public.flourish.studio/visualisation/13237030/?utm_source=embed&utm_campaign=visualisation/13237030");
-    			attr_dev(a0, "target", "_top");
-    			set_style(a0, "text-decoration", "none", 1);
-    			add_location(a0, file, 74, 435, 3071);
+    			attr_dev(img2, "class", "svelte-ejfkst");
+    			add_location(img2, file, 79, 0, 1685);
+    			if (iframe.src !== (iframe_src_value = "https://flo.uri.sh/visualisation/13237030/embed")) attr_dev(iframe, "src", iframe_src_value);
+    			attr_dev(iframe, "title", "Interactive or visual content");
+    			attr_dev(iframe, "class", "flourish-embed-iframe");
+    			attr_dev(iframe, "frameborder", "0");
+    			attr_dev(iframe, "scrolling", "no");
+    			set_style(iframe, "width", "100%");
+    			set_style(iframe, "height", "600px");
+    			attr_dev(iframe, "sandbox", "allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation");
+    			add_location(iframe, file, 81, 0, 1727);
+    			attr_dev(a, "class", "flourish-credit");
+    			attr_dev(a, "href", "https://public.flourish.studio/visualisation/13237030/?utm_source=embed&utm_campaign=visualisation/13237030");
+    			attr_dev(a, "target", "_top");
+    			set_style(a, "text-decoration", "none", 1);
+    			add_location(a, file, 83, 78, 2166);
     			set_style(div3, "width", "100%!");
     			set_style(div3, "margin-top", "4px", 1);
     			set_style(div3, "text-align", "right", 1);
-    			add_location(div3, file, 74, 357, 2993);
-    			if (iframe1.src !== (iframe1_src_value = "https://flo.uri.sh/visualisation/13188024/embed")) attr_dev(iframe1, "src", iframe1_src_value);
-    			attr_dev(iframe1, "title", "Interactive or visual content");
-    			attr_dev(iframe1, "class", "flourish-embed-iframe");
-    			attr_dev(iframe1, "frameborder", "0");
-    			attr_dev(iframe1, "scrolling", "no");
-    			set_style(iframe1, "width", "100%");
-    			set_style(iframe1, "height", "600px");
-    			attr_dev(iframe1, "sandbox", "allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation");
-    			add_location(iframe1, file, 75, 1, 3279);
-    			attr_dev(a1, "class", "flourish-credit");
-    			attr_dev(a1, "href", "https://public.flourish.studio/visualisation/13188024/?utm_source=embed&utm_campaign=visualisation/13188024");
-    			attr_dev(a1, "target", "_top");
-    			set_style(a1, "text-decoration", "none", 1);
-    			add_location(a1, file, 75, 436, 3714);
-    			set_style(div4, "width", "100%!");
-    			set_style(div4, "margin-top", "4px", 1);
-    			set_style(div4, "text-align", "right", 1);
-    			add_location(div4, file, 75, 358, 3636);
+    			add_location(div3, file, 83, 0, 2088);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -471,13 +442,10 @@ var app = (function () {
     			insert_dev(target, t9, anchor);
     			insert_dev(target, img2, anchor);
     			insert_dev(target, t10, anchor);
-    			insert_dev(target, iframe0, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, a0);
+    			insert_dev(target, iframe, anchor);
     			insert_dev(target, t11, anchor);
-    			insert_dev(target, iframe1, anchor);
-    			insert_dev(target, div4, anchor);
-    			append_dev(div4, a1);
+    			insert_dev(target, div3, anchor);
+    			append_dev(div3, a);
     		},
     		p: noop,
     		i: noop,
@@ -493,11 +461,9 @@ var app = (function () {
     			if (detaching) detach_dev(t9);
     			if (detaching) detach_dev(img2);
     			if (detaching) detach_dev(t10);
-    			if (detaching) detach_dev(iframe0);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(iframe);
     			if (detaching) detach_dev(t11);
-    			if (detaching) detach_dev(iframe1);
-    			if (detaching) detach_dev(div4);
+    			if (detaching) detach_dev(div3);
     		}
     	};
 
