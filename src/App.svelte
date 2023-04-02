@@ -25,6 +25,15 @@
 		font-size: 3em;
 		text-align: center;
 	}
+	h3 {
+		position: relative;
+		top: 2%;
+		left: 2%;
+		z-index: 1;
+		color: black;
+		font-size: 1em;
+		text-align: left;
+	}
 	p {
 		margin: 30px;
 	}
@@ -60,6 +69,8 @@
 Etiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. 
 Nam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. 
 Phasellus ac quam eu velit aliquam consequat nec vel orci. </p>
+
+<h3><b>Only 12% of the times I checked my phone were manually recorded</b></h3>
 
 <div class="image-container">
 	<img src="photo 2.jpg" alt="Image" class="smaller" />
