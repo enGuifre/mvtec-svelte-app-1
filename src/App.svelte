@@ -10,10 +10,10 @@
 		height: auto;
 	}
 	.smaller {
-		max-width: 500px;
 		top: 5%;
 		left: 2%;
 		position: relative;
+		max-width: 40%
 	}
 	h2 {
 		text-shadow: 0.5px 0.5px 0.5px #000;
