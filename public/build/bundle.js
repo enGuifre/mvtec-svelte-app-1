@@ -1,5 +1,5 @@
 
-(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35732/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
 var app = (function () {
     'use strict';
 
@@ -363,28 +363,28 @@ var app = (function () {
     			iframe = element("iframe");
     			if (img0.src !== (img0_src_value = "photo 1.jpg")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "Image");
-    			attr_dev(img0, "class", "svelte-1xt09y4");
-    			add_location(img0, file, 53, 1, 890);
-    			add_location(br, file, 54, 1, 930);
-    			add_location(b, file, 55, 5, 941);
-    			attr_dev(h2, "class", "svelte-1xt09y4");
-    			add_location(h2, file, 55, 1, 937);
+    			attr_dev(img0, "class", "svelte-seynqr");
+    			add_location(img0, file, 53, 1, 888);
+    			add_location(br, file, 54, 1, 928);
+    			add_location(b, file, 55, 5, 939);
+    			attr_dev(h2, "class", "svelte-seynqr");
+    			add_location(h2, file, 55, 1, 935);
     			set_style(div0, "position", "relative");
-    			add_location(div0, file, 52, 0, 855);
-    			attr_dev(p0, "class", "svelte-1xt09y4");
-    			add_location(p0, file, 58, 0, 973);
+    			add_location(div0, file, 52, 0, 853);
+    			attr_dev(p0, "class", "svelte-seynqr");
+    			add_location(p0, file, 58, 0, 971);
     			if (img1.src !== (img1_src_value = "photo 2.jpg")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "Image");
-    			attr_dev(img1, "class", "smaller svelte-1xt09y4");
-    			add_location(img1, file, 64, 1, 1497);
-    			attr_dev(p1, "class", "svelte-1xt09y4");
-    			add_location(p1, file, 65, 1, 1553);
-    			attr_dev(div1, "class", "image-container svelte-1xt09y4");
-    			add_location(div1, file, 63, 0, 1465);
+    			attr_dev(img1, "class", "smaller svelte-seynqr");
+    			add_location(img1, file, 64, 1, 1495);
+    			attr_dev(p1, "class", "svelte-seynqr");
+    			add_location(p1, file, 65, 1, 1551);
+    			attr_dev(div1, "class", "image-container svelte-seynqr");
+    			add_location(div1, file, 63, 0, 1463);
     			if (img2.src !== (img2_src_value = "postits_4.png")) attr_dev(img2, "src", img2_src_value);
     			attr_dev(img2, "alt", "Image");
-    			attr_dev(img2, "class", "svelte-1xt09y4");
-    			add_location(img2, file, 71, 0, 2052);
+    			attr_dev(img2, "class", "svelte-seynqr");
+    			add_location(img2, file, 71, 0, 2050);
     			if (iframe.src !== (iframe_src_value = "https://flo.uri.sh/visualisation/13237030/embed")) attr_dev(iframe, "src", iframe_src_value);
     			attr_dev(iframe, "title", "Interactive or visual content");
     			attr_dev(iframe, "class", "flourish-embed-iframe");
@@ -393,7 +393,7 @@ var app = (function () {
     			set_style(iframe, "width", "100%");
     			set_style(iframe, "height", "600px");
     			attr_dev(iframe, "sandbox", "allow-same-origin allow-forms allow-scripts allow-downloads \r\nallow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation");
-    			add_location(iframe, file, 72, 0, 2093);
+    			add_location(iframe, file, 72, 0, 2091);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

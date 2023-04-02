@@ -12,7 +12,7 @@
 	.smaller {
 		max-width: 500px;
 		top: 5%;
-		left: -28%;
+		left: 2%;
 		position: relative;
 	}
 	h2 {
