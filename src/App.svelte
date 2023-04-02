@@ -6,19 +6,15 @@
 	img {
 		display: block;
 		margin: auto;
-		width: 100%;
-		max-width: 1250px;
+		max-width: 100%;
+		height: auto;
 	}
-
-	img.smaller {
-		display: block;
-		margin: auto;
+	.smaller {
 		max-width: 500px;
 		top: 5%;
 		left: -28%;
 		position: relative;
 	}
-
 	h2 {
 		text-shadow: 0.5px 0.5px 0.5px #000;
 		position: absolute;
@@ -29,56 +25,52 @@
 		font-size: 3em;
 		text-align: center;
 	}
-
 	p {
 		margin: 30px;
 	}
-
-	.text-beside-image {
-		display: inline-block;
-		vertical-align: top;
-		margin-left: 20px;
-		max-width: calc(100% - 540px);
+	.image-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin-top: 50px;
 	}
-
-	.text-beside-image p {
-		margin: 0;
+	.image-container img {
+		margin-right: 30px;
 	}
-
-	@media screen and (max-width: 800px) {
-		.text-beside-image {
-			display: block;
-			margin-left: 0;
-			max-width: 100%;
+	@media only screen and (max-width: 600px) {
+		.image-container {
+			flex-direction: column;
+			margin-top: 20px;
+		}
+		.image-container img {
+			margin-right: 0;
+			margin-bottom: 30px;
 		}
 	}
 </style>
 
 <div style="position:relative;">
-	<img src="photo 1.jpg" alt="Image"/>
+	<img src="photo 1.jpg" alt="Image" />
 	<br>
 	<h2><b>{header}</b></h2>
 </div>
 
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-	Sed eget sapien vel purus molestie auctor eu sit amet risus. 
-	Etiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, 
-	eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. 
-	Nam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. 
-	Nullam non diam id justo semper consectetur a non felis. 
-	Phasellus ac quam eu velit aliquam consequat nec vel orci. </p>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. 
+Etiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. 
+Nam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. 
+Phasellus ac quam eu velit aliquam consequat nec vel orci. </p>
 
-<div>
-	<img src="photo 2.jpg" alt="Image" class="smaller"/>
-	<div class="text-beside-image">
-		<p>Here's some extra text next to photo 2. It won't overlap with the postits image because of the CSS we added.</p>
-	</div>
+<div class="image-container">
+	<img src="photo 2.jpg" alt="Image" class="smaller" />
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget sapien vel purus molestie auctor eu sit amet risus. 
+Etiam congue, enim sed eleifend dapibus, ipsum mi interdum libero, eu dictum felis nunc et nibh. Aenean tristique elit vel lobortis bibendum. 
+Nam quis metus a risus euismod vehicula. Duis bibendum volutpat ante, at semper nisi vehicula in. Nullam non diam id justo semper consectetur a non felis. 
+Phasellus ac quam eu velit aliquam consequat nec vel orci. </p>
 </div>
 
-<br>
-
-<img src="postits_4.png" alt="Image"/>
-
-<iframe src='https://flo.uri.sh/visualisation/13237030/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
-
-<div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/13237030/?utm_source=embed&utm_campaign=visualisation/13237030' target='_top' style='text-decoration:none!important'></a></div>
+<img src="postits_4.png" alt="Image" />
+<iframe src='https://flo.uri.sh/visualisation/13237030/embed' title='Interactive or visual content' 
+class='flourish-embed-iframe' frameborder='0' scrolling='no' 
+style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads 
+allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
