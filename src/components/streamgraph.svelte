@@ -5,14 +5,13 @@
 	import { format, precisionFixed } from 'd3-format';
 	import { timeParse, timeFormat } from 'd3-time-format';
 	import * as d3 from 'd3';
-	import d3Tip from 'd3-tip';
 
 	import AxisX from './AxisX.html.svelte';
 	import AxisY from './AxisY.html.svelte';
 	import AreaStacked from './AreaStacked.svelte';
 
 	// This example loads csv data as json using @rollup/plugin-dsv
-	import data from './_data/fruit.csv';
+	import data from './Phone.csv';
 
 	const xKey = 'date';
 	const yKey = [0, 1];
