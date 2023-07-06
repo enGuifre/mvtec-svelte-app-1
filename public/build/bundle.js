@@ -26752,7 +26752,7 @@ var app = (function () {
     			set_style(div, "left", /*$xScale*/ ctx[7](/*tick*/ ctx[11]) + "%");
     			set_style(div, "top", "0px");
     			set_style(div, "bottom", "0");
-    			add_location(div, file$3, 43, 6, 1964);
+    			add_location(div, file$3, 43, 6, 2007);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -26793,7 +26793,7 @@ var app = (function () {
 
     			set_style(div, "height", "6px");
     			set_style(div, "bottom", "-6px");
-    			add_location(div, file$3, 46, 6, 2088);
+    			add_location(div, file$3, 46, 6, 2134);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -26848,7 +26848,7 @@ var app = (function () {
     			t2 = text(t2_value);
     			attr_dev(div0, "class", "text svelte-u74pi8");
     			set_style(div0, "top", /*yTick*/ ctx[5] + "px");
-    			add_location(div0, file$3, 51, 6, 2367);
+    			add_location(div0, file$3, 51, 6, 2418);
     			attr_dev(div1, "class", div1_class_value = "tick tick-" + /*i*/ ctx[13] + " svelte-u74pi8");
 
     			set_style(div1, "left", /*$xScale*/ ctx[7](/*tick*/ ctx[11]) + (/*isBandwidth*/ ctx[6]
@@ -26856,7 +26856,7 @@ var app = (function () {
     			: 0) + "%");
 
     			set_style(div1, "top", "100%");
-    			add_location(div1, file$3, 48, 4, 2233);
+    			add_location(div1, file$3, 48, 4, 2281);
     			this.first = first;
     		},
     		m: function mount(target, anchor) {
@@ -26943,7 +26943,7 @@ var app = (function () {
     			attr_dev(div, "class", "baseline svelte-u74pi8");
     			set_style(div, "top", "100%");
     			set_style(div, "width", "100%");
-    			add_location(div, file$3, 57, 4, 2502);
+    			add_location(div, file$3, 57, 4, 2559);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -26994,7 +26994,7 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(div, "class", "axis x-axis svelte-u74pi8");
     			toggle_class(div, "snapTicks", /*snapTicks*/ ctx[3]);
-    			add_location(div, file$3, 40, 0, 1849);
+    			add_location(div, file$3, 40, 0, 1889);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -27260,7 +27260,7 @@ var app = (function () {
     			set_style(div, "top", "0");
     			set_style(div, "left", (/*isBandwidth*/ ctx[6] ? /*$padding*/ ctx[9].left : 0) + "px");
     			set_style(div, "right", "-" + (/*$padding*/ ctx[9].left + /*$padding*/ ctx[9].right) + "px");
-    			add_location(div, file$4, 48, 4, 1756);
+    			add_location(div, file$4, 48, 4, 1804);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -27301,7 +27301,7 @@ var app = (function () {
     			set_style(div, "top", "0");
     			set_style(div, "left", /*isBandwidth*/ ctx[6] ? /*$padding*/ ctx[9].left : 0);
     			set_style(div, "right", "-" + (/*$padding*/ ctx[9].left + /*$padding*/ ctx[9].right) + "px");
-    			add_location(div, file$4, 55, 4, 1951);
+    			add_location(div, file$4, 55, 4, 2006);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -27346,7 +27346,7 @@ var app = (function () {
     			: 0) + "px");
 
     			set_style(div, "width", "6px");
-    			add_location(div, file$4, 62, 4, 2142);
+    			add_location(div, file$4, 62, 4, 2204);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -27414,7 +27414,7 @@ var app = (function () {
     			? -50 - Math.floor(/*$yScale*/ ctx[7].bandwidth() / -2)
     			: "-100") + "%)");
 
-    			add_location(div0, file$4, 67, 3, 2264);
+    			add_location(div0, file$4, 67, 3, 2331);
     			attr_dev(div1, "class", div1_class_value = "tick tick-" + /*i*/ ctx[17] + " svelte-1e3rg42");
 
     			set_style(div1, "top", /*$yScale*/ ctx[7](/*tick*/ ctx[15]) + (/*isBandwidth*/ ctx[6]
@@ -27422,7 +27422,7 @@ var app = (function () {
     			: 0) + "%");
 
     			set_style(div1, "left", /*$xRange*/ ctx[10][0] + "%");
-    			add_location(div1, file$4, 43, 2, 1591);
+    			add_location(div1, file$4, 43, 2, 1634);
     			this.first = div1;
     		},
     		m: function mount(target, anchor) {
@@ -27553,7 +27553,7 @@ var app = (function () {
 
     			attr_dev(div, "class", "axis y-axis svelte-1e3rg42");
     			set_style(div, "transform", "translate(-" + /*$padding*/ ctx[9].left + "px, 0)");
-    			add_location(div, file$4, 41, 0, 1476);
+    			add_location(div, file$4, 41, 0, 1517);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -27808,7 +27808,7 @@ var app = (function () {
     			attr_dev(path, "class", "path-area");
     			attr_dev(path, "d", path_d_value = /*areaGen*/ ctx[0](/*d*/ ctx[9]));
     			attr_dev(path, "fill", path_fill_value = /*$zGet*/ ctx[2](/*d*/ ctx[9]));
-    			add_location(path, file$5, 18, 4, 575);
+    			add_location(path, file$5, 18, 4, 593);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, path, anchor);
@@ -27857,7 +27857,7 @@ var app = (function () {
     			}
 
     			attr_dev(g, "class", "area-group");
-    			add_location(g, file$5, 16, 0, 527);
+    			add_location(g, file$5, 16, 0, 543);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -27982,7 +27982,428 @@ var app = (function () {
     	}
     }
 
-    var data = [["date","apples","bananas","cherries","dates"],["2023-03-26","26","48","44","32"],["2023-03-25","38","49","46","77"],["2023-03-24","39","22","62","76"],["2023-03-23","21","27","44","59"],["2023-03-22","18","29","42","66"],["2023-03-21","42","32","79","56"],["2023-03-20","30","32","68","76"],["2023-03-19","21","36","41","46"],["2023-03-18","42","30","43","83"],["2023-03-17","6","34","40","50"],["2023-03-16","29","51","71","42"],["2023-03-15","19","33","64","50"],["2023-03-14","37","53","29","82"],["2023-03-13","33","33","64","50"],["2023-03-12","45","59","34","42"],["2023-03-11","31","55","47","28"],["2023-03-10","35","32","67","29"],["2023-03-09","50","62","32","32"],["2023-03-08","42","34","89","32"],["2023-03-07","65","17","91","117"],["2023-03-06","85","14","73","47"],["2023-03-05","41","52","15","35"],["2023-03-04","5","6","21","44"],["2023-03-03","52","29","100","59"],["2023-03-02","14","11","32","43"],["2023-03-01","48","22","133","64"],["2023-02-28","64","44","71","55"],["2023-02-27","23","19","110","41"],["2023-02-26","72","52","18","31"],["2023-02-25","48","41","28","39"],["2023-02-24","7","15","49","50"],["2023-02-23","44","50","67","150"],["2023-02-22","50","0","79","109"],["2023-02-21","101","32","69","112"],["2023-02-20","54","19","91","136"],["2023-02-19","55","58","36","25"],["2023-02-18","30","38","51","58"],["2023-02-17","51","37","71","57"],["2023-02-16","20","19","76","65"],["2023-02-15","13","11","42","91"],["2023-02-14","84","44","41","113"],["2023-02-13","31","8","102","67"],["2023-02-12","9","30","50","70"],["2023-02-11","14","37","48","61"],["2023-02-10","19","16","100","66"],["2023-02-09","30","19","86","98"],["2023-02-08","39","20","87","98"],["2023-02-07","49","45","98","110"],["2023-02-06","50","48","74","53"],["2023-02-05","25","47","40","64"],["2023-02-04","45","50","35","52"],["2023-02-03","39","32","59","49"],["2023-02-02","35","14","87","23"],["2023-02-01","45","20","79","65"],["2023-01-31","40","23","59","93"],["2023-01-30","30","18","78","62"],["2023-01-29","39","52","25","32"],["2023-01-28","32","44","29","54"],["2023-01-27","44","37","67","54"],["2023-01-26","32","9","73","125"],[""]];
+    var data = [
+    	{
+    		date: "2023-03-26",
+    		Safari: 26,
+    		Twitter: 48,
+    		WhatsApp: 44,
+    		Other: 32
+    	},
+    	{
+    		date: "2023-03-25",
+    		Safari: 38,
+    		Twitter: 49,
+    		WhatsApp: 46,
+    		Other: 77
+    	},
+    	{
+    		date: "2023-03-24",
+    		Safari: 39,
+    		Twitter: 22,
+    		WhatsApp: 62,
+    		Other: 76
+    	},
+    	{
+    		date: "2023-03-23",
+    		Safari: 21,
+    		Twitter: 27,
+    		WhatsApp: 44,
+    		Other: 59
+    	},
+    	{
+    		date: "2023-03-22",
+    		Safari: 18,
+    		Twitter: 29,
+    		WhatsApp: 42,
+    		Other: 66
+    	},
+    	{
+    		date: "2023-03-21",
+    		Safari: 42,
+    		Twitter: 32,
+    		WhatsApp: 79,
+    		Other: 56
+    	},
+    	{
+    		date: "2023-03-20",
+    		Safari: 30,
+    		Twitter: 32,
+    		WhatsApp: 68,
+    		Other: 76
+    	},
+    	{
+    		date: "2023-03-19",
+    		Safari: 21,
+    		Twitter: 36,
+    		WhatsApp: 41,
+    		Other: 46
+    	},
+    	{
+    		date: "2023-03-18",
+    		Safari: 42,
+    		Twitter: 30,
+    		WhatsApp: 43,
+    		Other: 83
+    	},
+    	{
+    		date: "2023-03-17",
+    		Safari: 6,
+    		Twitter: 34,
+    		WhatsApp: 40,
+    		Other: 50
+    	},
+    	{
+    		date: "2023-03-16",
+    		Safari: 29,
+    		Twitter: 51,
+    		WhatsApp: 71,
+    		Other: 42
+    	},
+    	{
+    		date: "2023-03-15",
+    		Safari: 19,
+    		Twitter: 33,
+    		WhatsApp: 64,
+    		Other: 50
+    	},
+    	{
+    		date: "2023-03-14",
+    		Safari: 37,
+    		Twitter: 53,
+    		WhatsApp: 29,
+    		Other: 82
+    	},
+    	{
+    		date: "2023-03-13",
+    		Safari: 33,
+    		Twitter: 33,
+    		WhatsApp: 64,
+    		Other: 50
+    	},
+    	{
+    		date: "2023-03-12",
+    		Safari: 45,
+    		Twitter: 59,
+    		WhatsApp: 34,
+    		Other: 42
+    	},
+    	{
+    		date: "2023-03-11",
+    		Safari: 31,
+    		Twitter: 55,
+    		WhatsApp: 47,
+    		Other: 28
+    	},
+    	{
+    		date: "2023-03-10",
+    		Safari: 35,
+    		Twitter: 32,
+    		WhatsApp: 67,
+    		Other: 29
+    	},
+    	{
+    		date: "2023-03-09",
+    		Safari: 50,
+    		Twitter: 62,
+    		WhatsApp: 32,
+    		Other: 32
+    	},
+    	{
+    		date: "2023-03-08",
+    		Safari: 42,
+    		Twitter: 34,
+    		WhatsApp: 89,
+    		Other: 32
+    	},
+    	{
+    		date: "2023-03-07",
+    		Safari: 65,
+    		Twitter: 17,
+    		WhatsApp: 91,
+    		Other: 117
+    	},
+    	{
+    		date: "2023-03-06",
+    		Safari: 85,
+    		Twitter: 14,
+    		WhatsApp: 73,
+    		Other: 47
+    	},
+    	{
+    		date: "2023-03-05",
+    		Safari: 41,
+    		Twitter: 52,
+    		WhatsApp: 15,
+    		Other: 35
+    	},
+    	{
+    		date: "2023-03-04",
+    		Safari: 5,
+    		Twitter: 6,
+    		WhatsApp: 21,
+    		Other: 44
+    	},
+    	{
+    		date: "2023-03-03",
+    		Safari: 52,
+    		Twitter: 29,
+    		WhatsApp: 100,
+    		Other: 59
+    	},
+    	{
+    		date: "2023-03-02",
+    		Safari: 14,
+    		Twitter: 11,
+    		WhatsApp: 32,
+    		Other: 43
+    	},
+    	{
+    		date: "2023-03-01",
+    		Safari: 48,
+    		Twitter: 22,
+    		WhatsApp: 133,
+    		Other: 64
+    	},
+    	{
+    		date: "2023-02-28",
+    		Safari: 64,
+    		Twitter: 44,
+    		WhatsApp: 71,
+    		Other: 55
+    	},
+    	{
+    		date: "2023-02-27",
+    		Safari: 23,
+    		Twitter: 19,
+    		WhatsApp: 110,
+    		Other: 41
+    	},
+    	{
+    		date: "2023-02-26",
+    		Safari: 72,
+    		Twitter: 52,
+    		WhatsApp: 18,
+    		Other: 31
+    	},
+    	{
+    		date: "2023-02-25",
+    		Safari: 48,
+    		Twitter: 41,
+    		WhatsApp: 28,
+    		Other: 39
+    	},
+    	{
+    		date: "2023-02-24",
+    		Safari: 7,
+    		Twitter: 15,
+    		WhatsApp: 49,
+    		Other: 50
+    	},
+    	{
+    		date: "2023-02-23",
+    		Safari: 44,
+    		Twitter: 50,
+    		WhatsApp: 67,
+    		Other: 150
+    	},
+    	{
+    		date: "2023-02-22",
+    		Safari: 50,
+    		Twitter: 0,
+    		WhatsApp: 79,
+    		Other: 109
+    	},
+    	{
+    		date: "2023-02-21",
+    		Safari: 101,
+    		Twitter: 32,
+    		WhatsApp: 69,
+    		Other: 112
+    	},
+    	{
+    		date: "2023-02-20",
+    		Safari: 54,
+    		Twitter: 19,
+    		WhatsApp: 91,
+    		Other: 136
+    	},
+    	{
+    		date: "2023-02-19",
+    		Safari: 55,
+    		Twitter: 58,
+    		WhatsApp: 36,
+    		Other: 25
+    	},
+    	{
+    		date: "2023-02-18",
+    		Safari: 30,
+    		Twitter: 38,
+    		WhatsApp: 51,
+    		Other: 58
+    	},
+    	{
+    		date: "2023-02-17",
+    		Safari: 51,
+    		Twitter: 37,
+    		WhatsApp: 71,
+    		Other: 57
+    	},
+    	{
+    		date: "2023-02-16",
+    		Safari: 20,
+    		Twitter: 19,
+    		WhatsApp: 76,
+    		Other: 65
+    	},
+    	{
+    		date: "2023-02-15",
+    		Safari: 13,
+    		Twitter: 11,
+    		WhatsApp: 42,
+    		Other: 91
+    	},
+    	{
+    		date: "2023-02-14",
+    		Safari: 84,
+    		Twitter: 44,
+    		WhatsApp: 41,
+    		Other: 113
+    	},
+    	{
+    		date: "2023-02-13",
+    		Safari: 31,
+    		Twitter: 8,
+    		WhatsApp: 102,
+    		Other: 67
+    	},
+    	{
+    		date: "2023-02-12",
+    		Safari: 9,
+    		Twitter: 30,
+    		WhatsApp: 50,
+    		Other: 70
+    	},
+    	{
+    		date: "2023-02-11",
+    		Safari: 14,
+    		Twitter: 37,
+    		WhatsApp: 48,
+    		Other: 61
+    	},
+    	{
+    		date: "2023-02-10",
+    		Safari: 19,
+    		Twitter: 16,
+    		WhatsApp: 100,
+    		Other: 66
+    	},
+    	{
+    		date: "2023-02-09",
+    		Safari: 30,
+    		Twitter: 19,
+    		WhatsApp: 86,
+    		Other: 98
+    	},
+    	{
+    		date: "2023-02-08",
+    		Safari: 39,
+    		Twitter: 20,
+    		WhatsApp: 87,
+    		Other: 98
+    	},
+    	{
+    		date: "2023-02-07",
+    		Safari: 49,
+    		Twitter: 45,
+    		WhatsApp: 98,
+    		Other: 110
+    	},
+    	{
+    		date: "2023-02-06",
+    		Safari: 50,
+    		Twitter: 48,
+    		WhatsApp: 74,
+    		Other: 53
+    	},
+    	{
+    		date: "2023-02-05",
+    		Safari: 25,
+    		Twitter: 47,
+    		WhatsApp: 40,
+    		Other: 64
+    	},
+    	{
+    		date: "2023-02-04",
+    		Safari: 45,
+    		Twitter: 50,
+    		WhatsApp: 35,
+    		Other: 52
+    	},
+    	{
+    		date: "2023-02-03",
+    		Safari: 39,
+    		Twitter: 32,
+    		WhatsApp: 59,
+    		Other: 49
+    	},
+    	{
+    		date: "2023-02-02",
+    		Safari: 35,
+    		Twitter: 14,
+    		WhatsApp: 87,
+    		Other: 23
+    	},
+    	{
+    		date: "2023-02-01",
+    		Safari: 45,
+    		Twitter: 20,
+    		WhatsApp: 79,
+    		Other: 65
+    	},
+    	{
+    		date: "2023-01-31",
+    		Safari: 40,
+    		Twitter: 23,
+    		WhatsApp: 59,
+    		Other: 93
+    	},
+    	{
+    		date: "2023-01-30",
+    		Safari: 30,
+    		Twitter: 18,
+    		WhatsApp: 78,
+    		Other: 62
+    	},
+    	{
+    		date: "2023-01-29",
+    		Safari: 39,
+    		Twitter: 52,
+    		WhatsApp: 25,
+    		Other: 32
+    	},
+    	{
+    		date: "2023-01-28",
+    		Safari: 32,
+    		Twitter: 44,
+    		WhatsApp: 29,
+    		Other: 54
+    	},
+    	{
+    		date: "2023-01-27",
+    		Safari: 44,
+    		Twitter: 37,
+    		WhatsApp: 67,
+    		Other: 54
+    	},
+    	{
+    		date: "2023-01-26",
+    		Safari: 32,
+    		Twitter: 9,
+    		WhatsApp: 73,
+    		Other: 125
+    	}
+    ];
 
     /* src\components\streamgraph.svelte generated by Svelte v3.31.0 */
 
@@ -28094,7 +28515,7 @@ var app = (function () {
     	return block;
     }
 
-    // (44:1) <LayerCake   ssr={true}   percentRange={true}   padding={{ top: 0, right: 0, bottom: 20, left: 17 }}   x={(d) => d.data[xKey]}   y={yKey}   z={zKey}   zScale={scaleOrdinal()}   zDomain={seriesNames}   zRange={seriesColors}   flatData={flatten(series)}   data={series}  >
+    // (44:1) <LayerCake    ssr={true}    percentRange={true}    padding={{ top: 0, right: 0, bottom: 20, left: 17 }}    x={(d) => d.data[xKey]}    y={yKey}    z={zKey}    zScale={scaleOrdinal()}    zDomain={seriesNames}    zRange={seriesColors}    flatData={flatten(series)}    data={series}   >
     function create_default_slot(ctx) {
     	let html;
     	let t;
@@ -28167,7 +28588,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(44:1) <LayerCake   ssr={true}   percentRange={true}   padding={{ top: 0, right: 0, bottom: 20, left: 17 }}   x={(d) => d.data[xKey]}   y={yKey}   z={zKey}   zScale={scaleOrdinal()}   zDomain={seriesNames}   zRange={seriesColors}   flatData={flatten(series)}   data={series}  >",
+    		source: "(44:1) <LayerCake    ssr={true}    percentRange={true}    padding={{ top: 0, right: 0, bottom: 20, left: 17 }}    x={(d) => d.data[xKey]}    y={yKey}    z={zKey}    zScale={scaleOrdinal()}    zDomain={seriesNames}    zRange={seriesColors}    flatData={flatten(series)}    data={series}   >",
     		ctx
     	});
 
@@ -28203,7 +28624,7 @@ var app = (function () {
     			div = element("div");
     			create_component(layercake.$$.fragment);
     			attr_dev(div, "class", "chart-container svelte-1o243py");
-    			add_location(div, file$6, 42, 0, 1254);
+    			add_location(div, file$6, 42, 0, 1302);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

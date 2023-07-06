@@ -11,7 +11,7 @@
 	import AreaStacked from './AreaStacked.svelte';
 
 	// This example loads csv data as json using @rollup/plugin-dsv
-	import data from './Phone.csv';
+	import data from '../data/Phone.json'
 
 	const xKey = 'date';
 	const yKey = [0, 1];
