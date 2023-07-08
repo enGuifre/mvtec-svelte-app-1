@@ -5,6 +5,8 @@
 	import { format, precisionFixed } from 'd3-format';
 	import { timeParse, timeFormat } from 'd3-time-format';
 	import * as d3 from 'd3';
+	import Legend from './Legend.svelte';
+
 
 	import AxisX from './AxisX.html.svelte';
 	import AxisY from './AxisY.html.svelte';
@@ -42,27 +44,29 @@
 
 <div class="chart-container">
 	<LayerCake
-		ssr={true}
-		percentRange={true}
-		padding={{ top: 0, right: 0, bottom: 20, left: 17 }}
-		x={(d) => d.data[xKey]}
-		y={yKey}
-		z={zKey}
-		zScale={scaleOrdinal()}
-		zDomain={seriesNames}
-		zRange={seriesColors}
-		flatData={flatten(series)}
-		data={series}
+	  ssr={true}
+	  percentRange={true}
+	  padding={{ top: 0, right: 0, bottom: 20, left: 0 }}
+	  x={(d) => d.data[xKey]}
+	  y={yKey}
+	  z={zKey}
+	  zScale={scaleOrdinal()}
+	  zDomain={seriesNames}
+	  zRange={seriesColors}
+	  flatData={flatten(series)}
+	  data={series}
 	>
-		<Html>
-			<AxisX formatTick={formatTickX} tickMarks={true} />
-			<AxisY baseline={true} formatTick={formatTickY} />
-		</Html>
-		<ScaledSvg>
-			<AreaStacked />
-		</ScaledSvg>
+	  <Html>
+		<AxisX formatTick={formatTickX} tickMarks={true} />
+		<AxisY baseline={true} formatTick={formatTickY} />
+	  </Html>
+	  <ScaledSvg>
+		<AreaStacked />
+	  </ScaledSvg>
 	</LayerCake>
-</div>
+	<br>
+	<Legend {seriesNames} {seriesColors} />
+  </div>
 
 <style>
 	/*
